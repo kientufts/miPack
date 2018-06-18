@@ -9,12 +9,27 @@
       <title>Welcome to miPack</title>
       <style>
          .Bimage{background-image: url("resources/images/index_background.jpg")};
+         .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto
+         }
       </style>
    </h:head>
 
    <h:body styleClass="Bimage">
       <h:form>
-         Welcome to miPack
+         <h1 style="text-align: center; color: crimson; font-family: Georgia; font-size: 250%">Welcome to miPack</h1>
+         <br/> <br/> <br/>
+         <div class="center">
+            <table>
+               <tr>
+                  <td><h:commandButton value="Customer Tracking" image="resources/images/iBtn_customer_tracking.png"/></td>
+                  <td><h:commandButton value="Customer Tracking" image="resources/images/iBtn_administration.png"/></td>
+                  <td><h:commandButton value="Customer Tracking" image="resources/images/iBtn_event.png"/></td>
+               </tr>
+            </table>
+         </div>
       </h:form>
    </h:body>
 </html>
