@@ -9,10 +9,14 @@
       <title>Welcome to miPack</title>
       <style>
          .Bimage{background-image: url("resources/images/index_background.jpg")};
-         .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto
+         #div {
+            display: flex;
+            justify-content: center;
+         }
+
+         #table {
+            align-self: center;
+         }
          }
       </style>
    </h:head>
@@ -21,15 +25,21 @@
       <h:form>
          <h1 style="text-align: center; color: crimson; font-family: Georgia; font-size: 250%">Welcome to miPack</h1>
          <br/> <br/> <br/>
-         <div class="center">
-            <table>
-               <tr>
-                  <td><h:commandButton value="Customer Tracking" image="resources/images/iBtn_customer_tracking.png"/></td>
-                  <td><h:commandButton value="Customer Tracking" image="resources/images/iBtn_administration.png"/></td>
-                  <td><h:commandButton value="Customer Tracking" image="resources/images/iBtn_event.png"/></td>
-               </tr>
-            </table>
-         </div>
+         <table style="margin: 0 auto; text-align:center">
+            <col width="300"/>
+            <col width="300"/>
+            <col width="300"/>
+            <tr>
+               <td><h:commandButton id="iBtn_customer_tracking"  image="resources/images/iBtn_customer_tracking.png"/></td>
+               <td><h:commandButton id="iBtn_administraton" value="Administration" image="resources/images/iBtn_administration.png"/></td>
+               <td><h:commandButton id="iBtn_event_logging" value="Event Logging" image="resources/images/iBtn_event.png"/></td>
+            </tr>
+            <tr>
+               <td><h:outputText value="Customer Tracking"/></td>
+               <td><h:outputText value="Administration"/></td>
+               <td><h:outputText value="Event Logging"/></td>
+            </tr>
+         </table>
       </h:form>
    </h:body>
 </html>
