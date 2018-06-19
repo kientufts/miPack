@@ -7,25 +7,13 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
    <h:head>
       <title>Welcome to miPack</title>
-      <style>
-         .Bimage{background-image: url("resources/images/index_background.jpg")};
-
-          div.parent{
-              position: relative;
-          }
-
-          div.bottomright {
-              position: absolute;
-              bottom: 20px;
-              right: 20px;
-          }
-      </style>
        <script>
            setInterval(function(){
                document.getElementById("form:cBtn_showHour").click();
                document.getElementById("form:cBtn_showDay").click();
            },1000);
        </script>
+       <h:outputStylesheet name="dd.css"/>
    </h:head>
 
    <h:body styleClass="Bimage">
@@ -38,11 +26,11 @@
             <col width="300"/>
             <tr>
                <td><h:commandButton id="iBtn_customer_tracking"
-                                    image="resources/images/iBtn_customer_tracking.png"/></td>
+                                    image="images/iBtn_customer_tracking.png"/></td>
                <td><h:commandButton id="iBtn_administraton"
-                                    image="resources/images/iBtn_administration.png"/></td>
+                                    image="images/iBtn_administration.png"/></td>
                <td><h:commandButton id="iBtn_event_logging"
-                                    image="resources/images/iBtn_event.png"/></td>
+                                    image="images/iBtn_event.png"/></td>
             </tr>
             <tr>
                <td><h:outputText value="Customer Tracking"/></td>
@@ -50,8 +38,8 @@
                <td><h:outputText value="Event Logging"/></td>
             </tr>
          </table>
-          <div class="parent">
-              <div class="bottomright">
+          <br/>
+          <div id="div_clock">
                   <h:outputText id="outTxt_hourClock"
                                 value="#{timeController.hour}"
                                 style="color: blue; font-size: 133%"/> <br/>
@@ -69,7 +57,6 @@
                       <f:ajax render="outTxt_dayClock"/>
                   </h:commandButton>
               </div>
-          </div>
       </h:form>
    </h:body>
 </html>
