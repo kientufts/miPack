@@ -2,16 +2,28 @@
     background-image: url("../images/index_background.jpg");
 }
 
-.header{
+.header {
     text-align: center;
     color: crimson;
     font-family: Georgia;
     font-size: 250%;
 }
 
-.table_iBtn{
+.buttons_feature{
+    display: block;
+    max-width: 900px;
     margin: 0 auto;
-    text-align:center
+}
+
+.button_feature{
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+}
+
+.button_title{
+    font-size: 1.5rem;
+    padding: 10px;
 }
 
 #div_clock {

@@ -20,25 +20,26 @@
       <h:form id="form">
          <h1 class="header">Welcome to miPack</h1>
          <br/> <br/> <br/>
-         <table class="table_iBtn">
-            <col width="300"/>
-            <col width="300"/>
-            <col width="300"/>
-            <tr>
-               <td><h:commandButton id="iBtn_customer_tracking"
-                                    image="images/iBtn_customer_tracking.png"/></td>
-               <td><h:commandButton id="iBtn_administraton"
-                                    image="images/iBtn_administration.png"/></td>
-               <td><h:commandButton id="iBtn_event_logging"
-                                    image="images/iBtn_event.png"/></td>
-            </tr>
-            <tr>
-               <td><h:outputText value="Customer Tracking"/></td>
-               <td><h:outputText value="Administration"/></td>
-               <td><h:outputText value="Event Logging"/></td>
-            </tr>
-         </table>
-          <br/>
+          <div class="buttons_feature">
+              <div class="button_feature">
+                  <h:commandButton id="iBtn_customer_tracking"
+                                   image="images/iBtn_customer_tracking.png"/>
+                  <div class="button_title">Customer Tracking</div>
+              </div>
+
+              <div class="button_feature">
+                  <h:commandButton id="iBtn_administraton"
+                                   image="images/iBtn_administration.png"/>
+                  <div class="button_title">Administration</div>
+              </div>
+
+              <div class="button_feature">
+                  <h:commandButton id="iBtn_event_logging"
+                                   image="images/iBtn_event.png"/>
+                  <div class="button_title">Event Logging</div>
+              </div>
+          </div>
+
           <div id="div_clock">
               <h:outputText id="outTxt_hourClock"
                             value="#{timeController.hour}"
