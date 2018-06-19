@@ -13,14 +13,14 @@
                document.getElementById("form:cBtn_showDay").click();
            },1000);
        </script>
-       <h:outputStylesheet name="dd.css"/>
+       <h:outputStylesheet name="index.css"/>
    </h:head>
 
    <h:body styleClass="Bimage">
       <h:form id="form">
-         <h1 style="text-align: center; color: crimson; font-family: Georgia; font-size: 250%">Welcome to miPack</h1>
+         <h1 class="header">Welcome to miPack</h1>
          <br/> <br/> <br/>
-         <table style="margin: 0 auto; text-align:center">
+         <table class="table_iBtn">
             <col width="300"/>
             <col width="300"/>
             <col width="300"/>
@@ -40,23 +40,23 @@
          </table>
           <br/>
           <div id="div_clock">
-                  <h:outputText id="outTxt_hourClock"
-                                value="#{timeController.hour}"
-                                style="color: blue; font-size: 133%"/> <br/>
-                  <h:outputText id="outTxt_dayClock"
-                                value="#{timeController.day}"
-                                style="color: brown"/> <br/>
-                  <h:commandButton id="cBtn_showHour"
-                                   style="display: none"
-                                   action="#{timeController.showHour}">
-                      <f:ajax render="outTxt_hourClock"/>
-                  </h:commandButton>
-                  <h:commandButton id="cBtn_showDay"
-                                   style="display: none"
-                                   action="#{timeController.showDay}">
-                      <f:ajax render="outTxt_dayClock"/>
-                  </h:commandButton>
-              </div>
+              <h:outputText id="outTxt_hourClock"
+                            value="#{timeController.hour}"
+                            styleClass="hour"/> <br/>
+              <h:outputText id="outTxt_dayClock"
+                            value="#{timeController.day}"
+                            styleClass="day"/> <br/>
+              <h:commandButton id="cBtn_showHour"
+                               styleClass="time_show_btn"
+                               action="#{timeController.showHour}">
+                  <f:ajax render="outTxt_hourClock"/>
+              </h:commandButton>
+              <h:commandButton id="cBtn_showDay"
+                               styleClass="time_show_btn"
+                               action="#{timeController.showDay}">
+                  <f:ajax render="outTxt_dayClock"/>
+              </h:commandButton>
+          </div>
       </h:form>
    </h:body>
 </html>

@@ -1,9 +1,0 @@
-.Bimage{
-    background-image: url("../images/index_background.jpg");
-}
-
-#div_clock {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-}
