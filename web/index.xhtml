@@ -9,20 +9,27 @@
       <title>Welcome to miPack</title>
       <style>
          .Bimage{background-image: url("resources/images/index_background.jpg")};
-         #div {
-            display: flex;
-            justify-content: center;
-         }
 
-         #table {
-            align-self: center;
-         }
-         }
+          div.parent{
+              position: relative;
+          }
+
+          div.bottomright {
+              position: absolute;
+              bottom: 20px;
+              right: 20px;
+          }
       </style>
+       <script>
+           setInterval(function(){
+               document.getElementById("form:cBtn_showHour").click();
+               document.getElementById("form:cBtn_showDay").click();
+           },1000);
+       </script>
    </h:head>
 
    <h:body styleClass="Bimage">
-      <h:form>
+      <h:form id="form">
          <h1 style="text-align: center; color: crimson; font-family: Georgia; font-size: 250%">Welcome to miPack</h1>
          <br/> <br/> <br/>
          <table style="margin: 0 auto; text-align:center">
@@ -30,9 +37,12 @@
             <col width="300"/>
             <col width="300"/>
             <tr>
-               <td><h:commandButton id="iBtn_customer_tracking"  image="resources/images/iBtn_customer_tracking.png"/></td>
-               <td><h:commandButton id="iBtn_administraton" value="Administration" image="resources/images/iBtn_administration.png"/></td>
-               <td><h:commandButton id="iBtn_event_logging" value="Event Logging" image="resources/images/iBtn_event.png"/></td>
+               <td><h:commandButton id="iBtn_customer_tracking"
+                                    image="resources/images/iBtn_customer_tracking.png"/></td>
+               <td><h:commandButton id="iBtn_administraton"
+                                    image="resources/images/iBtn_administration.png"/></td>
+               <td><h:commandButton id="iBtn_event_logging"
+                                    image="resources/images/iBtn_event.png"/></td>
             </tr>
             <tr>
                <td><h:outputText value="Customer Tracking"/></td>
@@ -40,6 +50,26 @@
                <td><h:outputText value="Event Logging"/></td>
             </tr>
          </table>
+          <div class="parent">
+              <div class="bottomright">
+                  <h:outputText id="outTxt_hourClock"
+                                value="#{timeController.hour}"
+                                style="color: blue; font-size: 133%"/> <br/>
+                  <h:outputText id="outTxt_dayClock"
+                                value="#{timeController.day}"
+                                style="color: brown"/> <br/>
+                  <h:commandButton id="cBtn_showHour"
+                                   style="display: none"
+                                   action="#{timeController.showHour}">
+                      <f:ajax render="outTxt_hourClock"/>
+                  </h:commandButton>
+                  <h:commandButton id="cBtn_showDay"
+                                   style="display: none"
+                                   action="#{timeController.showDay}">
+                      <f:ajax render="outTxt_dayClock"/>
+                  </h:commandButton>
+              </div>
+          </div>
       </h:form>
    </h:body>
 </html>
