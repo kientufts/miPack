@@ -9,19 +9,19 @@
     font-size: 250%;
 }
 
-.buttons_feature{
+.menu{
     display: block;
     max-width: 900px;
     margin: 0 auto;
 }
 
-.button_feature{
+.menu__item{
     width: 33%;
     display: inline-block;
     text-align: center;
 }
 
-.button_title{
+.menu__item--large{
     font-size: 1.5rem;
     padding: 10px;
 }
@@ -32,15 +32,18 @@
     right: 20px;
 }
 
-.hour{
+.text--blue{
     color: blue;
-    font-size: 133%
 }
 
-.day{
+.text--brown{
     color: brown;
 }
 
-.time_show_btn{
+.text--large{
+    font-size: 133%;
+}
+
+.button--hidden{
     display: none;
 }

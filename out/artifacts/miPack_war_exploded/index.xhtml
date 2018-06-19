@@ -20,40 +20,40 @@
       <h:form id="form">
          <h1 class="header">Welcome to miPack</h1>
          <br/> <br/> <br/>
-          <div class="buttons_feature">
-              <div class="button_feature">
+          <div class="menu">
+              <div class="menu__item">
                   <h:commandButton id="iBtn_customer_tracking"
                                    image="images/iBtn_customer_tracking.png"/>
-                  <div class="button_title">Customer Tracking</div>
+                  <div class="menu__item--large">Customer Tracking</div>
               </div>
 
-              <div class="button_feature">
+              <div class="menu__item">
                   <h:commandButton id="iBtn_administraton"
                                    image="images/iBtn_administration.png"/>
-                  <div class="button_title">Administration</div>
+                  <div class="menu__item--large">Administration</div>
               </div>
 
-              <div class="button_feature">
+              <div class="menu__item">
                   <h:commandButton id="iBtn_event_logging"
                                    image="images/iBtn_event.png"/>
-                  <div class="button_title">Event Logging</div>
+                  <div class="menu__item--large">Event Logging</div>
               </div>
           </div>
 
           <div id="div_clock">
               <h:outputText id="outTxt_hourClock"
                             value="#{timeController.hour}"
-                            styleClass="hour"/> <br/>
+                            styleClass="text--blue text--large"/> <br/>
               <h:outputText id="outTxt_dayClock"
                             value="#{timeController.day}"
-                            styleClass="day"/> <br/>
+                            styleClass="text--brown"/> <br/>
               <h:commandButton id="cBtn_showHour"
-                               styleClass="time_show_btn"
+                               styleClass="button--hidden"
                                action="#{timeController.showHour}">
                   <f:ajax render="outTxt_hourClock"/>
               </h:commandButton>
               <h:commandButton id="cBtn_showDay"
-                               styleClass="time_show_btn"
+                               styleClass="button--hidden"
                                action="#{timeController.showDay}">
                   <f:ajax render="outTxt_dayClock"/>
               </h:commandButton>
