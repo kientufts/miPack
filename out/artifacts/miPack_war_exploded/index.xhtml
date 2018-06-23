@@ -15,6 +15,7 @@
        </script>
        <h:outputStylesheet name="index.css"/>
        <h:outputStylesheet name="language-switch-button.css"/>
+       <link rel="stylesheet" type="text/css" href="resources/search-box.css"/>
    </h:head>
 
    <h:body styleClass="Bimage">
@@ -49,6 +50,26 @@
                                 value="#{resourceController.current_lang}">
                     <f:selectItems value="#{resourceController.langList}"/>
               </h:selectOneRadio>
+          </div>
+
+          <div id="search-panel">
+              <h:inputText autocomplete="off"
+                           value="#{searchBoxController.display}">
+                  <f:passThroughAttribute name="placeHolder"
+                                          value="Search ..."/>
+                  <f:ajax event="keyup"
+                          listener="#{searchBoxController.search}"
+                          execute="@this" render="result-panel"/>
+              </h:inputText>
+              <h:panelGroup id="result-panel"
+                            layout="block" style="max-height: 30px">
+                  <ul>
+                      <ui:repeat value="#{searchBoxController.result}"
+                                 var="r">
+                          <li>#{r}</li>
+                      </ui:repeat>
+                  </ul>
+              </h:panelGroup>
           </div>
 
           <div id="div_clock">

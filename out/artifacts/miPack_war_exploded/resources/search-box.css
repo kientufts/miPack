@@ -1,0 +1,39 @@
+#search-panel{
+    border: 1px solid #DDD;
+    width: 130px;
+    padding: 2px;
+    position: fixed;
+    top: 10px;
+    right:100px;
+}
+
+#search-panel input[type='text']{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #DDD;
+    outline: none;
+    font-size: 12px;
+    font-family: fantasy;
+}
+
+#search-panel ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+#search-panel ul li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    font-family: serif;
+}
+
+#search-panel ul li:hover{
+    background-color: #DDDDDD;
+}
+
+#result-panel{
+    max-height: 30px;
+}
