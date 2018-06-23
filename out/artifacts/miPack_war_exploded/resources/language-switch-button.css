@@ -1,0 +1,33 @@
+.language-switch-button input[type= 'radio']{
+    display: none;
+}
+
+.language-switch-button label{
+    background-color: #009999;
+    padding: 1px 3px 1px 3px;
+    cursor: pointer;
+    border-radius: 2px;
+    color: whitesmoke;
+}
+
+.language-switch-button input[type='radio']:checked+label{
+    background-color: antiquewhite;
+    border: 1px solid #DDD;
+    color: blue;
+}
+
+.language-switch-button table,tr,td{
+    padding: 0px;
+    margin: 0px;
+}
+
+.language-switch-button{
+    background-color: white;
+    padding: 1px 3px 1px 3px;
+    border-radius: 2px;
+    font-family: Tahoma;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+
+}

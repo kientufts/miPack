@@ -6,7 +6,7 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
    <h:head>
-      <title>Welcome to miPack</title>
+      <title>#{lang.indexTitle}</title>
        <script>
            setInterval(function(){
                document.getElementById("form:cBtn_showHour").click();
@@ -14,30 +14,41 @@
            },1000);
        </script>
        <h:outputStylesheet name="index.css"/>
+       <h:outputStylesheet name="language-switch-button.css"/>
    </h:head>
 
    <h:body styleClass="Bimage">
       <h:form id="form">
-         <h1 class="header">Welcome to miPack</h1>
+         <h1 class="header">#{lang.indexHeader}</h1>
          <br/> <br/> <br/>
+
           <div class="menu">
               <div class="menu__item">
                   <h:commandButton id="iBtn_customer_tracking"
                                    image="images/iBtn_customer_tracking.png"/>
-                  <div class="menu__item--large">Customer Tracking</div>
+                  <div class="menu__item--large">#{lang.indexCustomerTracking}</div>
               </div>
 
               <div class="menu__item">
                   <h:commandButton id="iBtn_administraton"
                                    image="images/iBtn_administration.png"/>
-                  <div class="menu__item--large">Administration</div>
+                  <div class="menu__item--large">#{lang.indexAdministration}</div>
               </div>
 
               <div class="menu__item">
                   <h:commandButton id="iBtn_event_logging"
                                    image="images/iBtn_event.png"/>
-                  <div class="menu__item--large">Event Logging</div>
+                  <div class="menu__item--large">#{lang.indexEventLogging}</div>
               </div>
+          </div>
+
+          <div>
+              <h:selectOneRadio class="language-switch-button"
+                                onclick="this.form.submit()"
+                                valueChangeListener="#{resourceController.onLanguageSelectedListener}"
+                                value="#{resourceController.current_lang}">
+                    <f:selectItems value="#{resourceController.langList}"/>
+              </h:selectOneRadio>
           </div>
 
           <div id="div_clock">
