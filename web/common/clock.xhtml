@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <title>Clock</title>
+    <link rel="stylesheet" type="text/css" href="../resources/clock.css"/>
+</h:head>
+<h:body>
+    <h:form>
+        <ui:composition>
+            <div id="div_clock">
+                <h:outputText id="outTxt_hourClock"
+                              value="#{timeController.hour}"
+                              styleClass="text--blue text--large"/> <br/>
+                <h:outputText id="outTxt_dayClock"
+                              value="#{timeController.day}"
+                              styleClass="text--brown"/> <br/>
+                <h:commandButton id="cBtn_showHour"
+                                 styleClass="button--hidden"
+                                 action="#{timeController.showHour}">
+                    <f:ajax render="outTxt_hourClock"/>
+                </h:commandButton>
+                <h:commandButton id="cBtn_showDay"
+                                 styleClass="button--hidden"
+                                 action="#{timeController.showDay}">
+                    <f:ajax render="outTxt_dayClock"/>
+                </h:commandButton>
+            </div>
+        </ui:composition>
+    </h:form>
+</h:body>
+</html>

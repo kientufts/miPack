@@ -16,6 +16,7 @@
        <h:outputStylesheet name="index.css"/>
        <h:outputStylesheet name="language-switch-button.css"/>
        <link rel="stylesheet" type="text/css" href="resources/search-box.css"/>
+       <link rel="stylesheet" type="text/css" href="../resources/clock.css"/>
    </h:head>
 
    <h:body styleClass="Bimage">
@@ -27,69 +28,29 @@
               <div class="menu__item">
                   <h:commandButton id="iBtn_customer_tracking"
                                    image="images/iBtn_customer_tracking.png"/>
-                  <div class="menu__item--large">#{lang.indexCustomerTracking}</div>
+                  <div class="menu__item--large"> <a href="customer/track.xhtml"> #{lang.indexCustomerTracking} </a></div>
               </div>
 
               <div class="menu__item">
                   <h:commandButton id="iBtn_administraton"
                                    image="images/iBtn_administration.png"/>
-                  <div class="menu__item--large">#{lang.indexAdministration}</div>
+                  <div class="menu__item--large">
+                      <a href="admin/administration.xhtml">#{lang.indexAdministration}</a>
+                  </div>
               </div>
 
               <div class="menu__item">
                   <h:commandButton id="iBtn_event_logging"
                                    image="images/iBtn_event.png"/>
-                  <div class="menu__item--large">#{lang.indexEventLogging}</div>
+                  <div class="menu__item--large">
+                      <a href="eventLogging/eventLogging.xhtml">#{lang.indexEventLogging}</a>
+                  </div>
               </div>
           </div>
 
-          <div>
-              <h:selectOneRadio class="language-switch-button"
-                                onclick="this.form.submit()"
-                                valueChangeListener="#{resourceController.onLanguageSelectedListener}"
-                                value="#{resourceController.current_lang}">
-                    <f:selectItems value="#{resourceController.langList}"/>
-              </h:selectOneRadio>
-          </div>
-
-          <div id="search-panel">
-              <h:inputText autocomplete="off"
-                           value="#{searchBoxController.display}">
-                  <f:passThroughAttribute name="placeHolder"
-                                          value="Search ..."/>
-                  <f:ajax event="keyup"
-                          listener="#{searchBoxController.search}"
-                          execute="@this" render="result-panel"/>
-              </h:inputText>
-              <h:panelGroup id="result-panel"
-                            layout="block" style="max-height: 30px">
-                  <ul>
-                      <ui:repeat value="#{searchBoxController.result}"
-                                 var="r">
-                          <li>#{r}</li>
-                      </ui:repeat>
-                  </ul>
-              </h:panelGroup>
-          </div>
-
-          <div id="div_clock">
-              <h:outputText id="outTxt_hourClock"
-                            value="#{timeController.hour}"
-                            styleClass="text--blue text--large"/> <br/>
-              <h:outputText id="outTxt_dayClock"
-                            value="#{timeController.day}"
-                            styleClass="text--brown"/> <br/>
-              <h:commandButton id="cBtn_showHour"
-                               styleClass="button--hidden"
-                               action="#{timeController.showHour}">
-                  <f:ajax render="outTxt_hourClock"/>
-              </h:commandButton>
-              <h:commandButton id="cBtn_showDay"
-                               styleClass="button--hidden"
-                               action="#{timeController.showDay}">
-                  <f:ajax render="outTxt_dayClock"/>
-              </h:commandButton>
-          </div>
+          <ui:include src="common/language-switch.xhtml"/>
+          <ui:include src="common/search.xhtml"/>
+          <ui:include src="/common/clock.xhtml"/>
       </h:form>
    </h:body>
 </html>

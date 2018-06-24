@@ -1,0 +1,21 @@
+#div_clock {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.text--blue{
+    color: blue;
+}
+
+.text--brown{
+    color: brown;
+}
+
+.text--large{
+    font-size: 133%;
+}
+
+.button--hidden{
+    display: none;
+}
