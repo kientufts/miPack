@@ -8,17 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="349cb608-19b1-4b95-a9d6-7ad1c9884a79" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/miPack_war_exploded/admin/administration.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/miPack_war_exploded/admin/administration.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/miPack_war_exploded/common/clock.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/miPack_war_exploded/common/clock.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/miPack_war_exploded/common/language-switch.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/miPack_war_exploded/common/language-switch.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/miPack_war_exploded/common/search.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/miPack_war_exploded/common/search.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/miPack_war_exploded/customer/track.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/miPack_war_exploded/customer/track.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/miPack_war_exploded/eventLogging/eventLogging.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/miPack_war_exploded/eventLogging/eventLogging.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/miPack_war_exploded/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/miPack_war_exploded/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/miPack_war_exploded/resources/search-box.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/miPack_war_exploded/resources/search-box.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/j2ee/mipack/controller/SearchBoxController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/j2ee/mipack/controller/SearchBoxController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/common/language-switch.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/common/language-switch.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/common/search.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/common/search.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/resources/search-box.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/resources/search-box.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="language-switch.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/common/language-switch.xhtml">
+      <file leaf-file-name="search-box.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/resources/search-box.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            <state relative-caret-position="45">
+              <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -51,17 +43,8 @@
       <file leaf-file-name="search.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/common/search.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="390">
               <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchBoxController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/net/j2ee/mipack/controller/SearchBoxController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="23" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -87,7 +70,6 @@
         <option value="$PROJECT_DIR$/web/resources/language-switch-button.css" />
         <option value="$PROJECT_DIR$/web/WEB-INF/faces-config.xml" />
         <option value="$PROJECT_DIR$/src/net/j2ee/mipack/controller/ResourceController.java" />
-        <option value="$PROJECT_DIR$/web/resources/search-box.css" />
         <option value="$PROJECT_DIR$/src/net/j2ee/mipack/lang/resource.properties" />
         <option value="$PROJECT_DIR$/src/net/j2ee/mipack/lang/resource_cn.properties" />
         <option value="$PROJECT_DIR$/src/net/j2ee/mipack/lang/resource_vn.properties" />
@@ -104,6 +86,7 @@
         <option value="$PROJECT_DIR$/web/index.xhtml" />
         <option value="$PROJECT_DIR$/web/common/search.xhtml" />
         <option value="$PROJECT_DIR$/src/net/j2ee/mipack/controller/SearchBoxController.java" />
+        <option value="$PROJECT_DIR$/web/resources/search-box.css" />
       </list>
     </option>
   </component>
@@ -136,8 +119,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,7 +186,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -391,12 +374,16 @@
       <workItem from="1529830066591" duration="58000" />
       <workItem from="1529830506328" duration="423000" />
       <workItem from="1529832893723" duration="811000" />
-      <workItem from="1529833746962" duration="326000" />
+      <workItem from="1529833746962" duration="925000" />
+      <workItem from="1529860573785" duration="491000" />
+      <workItem from="1529861103045" duration="389000" />
+      <workItem from="1529861554552" duration="52000" />
+      <workItem from="1529861642208" duration="50000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57019000" />
+    <option name="totallyTimeSpent" value="58600000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
@@ -421,19 +408,19 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29018492" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29018492" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2546875" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -669,12 +656,12 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/faces-config.xml">
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
         </state>
       </provider>
-      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/j2ee/mipack/controller/ResourceController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -694,13 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/search-box.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -781,6 +761,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/j2ee/mipack/controller/SearchBoxController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
@@ -790,15 +777,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/common/search.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="390">
           <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/j2ee/mipack/controller/SearchBoxController.java">
+    <entry file="file://$PROJECT_DIR$/web/resources/search-box.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="23" selection-end-column="9" />
+        <state relative-caret-position="45">
+          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
         </state>
       </provider>
     </entry>

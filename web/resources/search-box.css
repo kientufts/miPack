@@ -1,6 +1,5 @@
 #search-panel{
-    border: 1px solid #DDD;
-    width: 130px;
+    width: 100px;
     padding: 2px;
     position: fixed;
     top: 10px;
@@ -10,7 +9,6 @@
 #search-panel input[type='text']{
     width: 100%;
     border: none;
-    border-bottom: 1px solid #DDD;
     outline: none;
     font-size: 12px;
     font-family: fantasy;

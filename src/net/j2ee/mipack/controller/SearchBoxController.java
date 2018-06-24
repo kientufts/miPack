@@ -18,22 +18,23 @@ public class SearchBoxController {
 	public void init(){
 		data = new ArrayList<>();
 		result = new ArrayList<>();
-//		String[] locales = Locale.getISOCountries();
-//		for(String code : locales){
-//			data.add(new Locale("",code).getDisplayCountry());
-//		}
+		String[] locales = Locale.getISOCountries();
+		for(String code : locales){
+			data.add(new Locale("",code).getDisplayCountry());
+		}
 	}
 
 	public void search(){
 		result.clear();
-		for(String country:data){
-			if(country.toLowerCase().startsWith(display.toLowerCase())){
-				result.add(country);
+		if(!display.trim().isEmpty()){
+			for(String country:data){
+				if(country.toLowerCase().startsWith(display.toLowerCase())){
+					result.add(country);
+				}
 			}
-		}
-
-		if(result.isEmpty()){
-			result.add("Not Found");
+			if(result.isEmpty()){
+				result.add("Not Found");
+			}
 		}
 	}
 
