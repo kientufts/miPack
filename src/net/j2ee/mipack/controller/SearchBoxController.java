@@ -37,6 +37,7 @@ public class SearchBoxController {
 		}
 	}
 
+
 	public List<String> getResult() {
 		return result;
 	}
@@ -52,4 +53,5 @@ public class SearchBoxController {
 	public void setDisplay(String display) {
 		this.display = display;
 	}
+
 }

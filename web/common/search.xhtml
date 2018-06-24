@@ -20,10 +20,11 @@
                                             value="#{lang.indexSearch}"/>
                     <f:ajax event="keyup"
                             listener="#{searchBoxController.search}"
-                            execute="@this" render="result-panel"/>
+                            execute="@this"
+                            render="result-panel"/>
                 </h:inputText>
                 <h:panelGroup id="result-panel"
-                              layout="block" rendered="#{not empty searchBoxController.result}">
+                              layout="block">
                     <ul>
                         <ui:repeat value="#{searchBoxController.result}"
                                    var="r">
