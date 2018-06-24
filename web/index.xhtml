@@ -7,16 +7,11 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
    <h:head>
       <title>#{lang.indexTitle}</title>
-       <script>
-           setInterval(function(){
-               document.getElementById("form:cBtn_showHour").click();
-               document.getElementById("form:cBtn_showDay").click();
-           },1000);
-       </script>
+       <h:outputScript name="index.js"/>
        <h:outputStylesheet name="index.css"/>
        <h:outputStylesheet name="language-switch-button.css"/>
-       <link rel="stylesheet" type="text/css" href="resources/search-box.css"/>
-       <link rel="stylesheet" type="text/css" href="../resources/clock.css"/>
+       <h:outputStylesheet name="search-box.css"/>
+       <h:outputStylesheet name="clock.css"/>
    </h:head>
 
    <h:body styleClass="Bimage">

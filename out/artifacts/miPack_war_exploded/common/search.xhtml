@@ -9,9 +9,17 @@
 <h:head>
     <title>Search</title>
     <link rel="stylesheet" type="text/css" href="../resources/search-box.css"/>
+    <script>
+        function ajaxEvent(data) {
+            status=data.status;
+            if(status=="success"){
+                document.getElementById("form:search-panel:result-panel").style.display="none";
+            }
+        }
+    </script>
 </h:head>
 <h:body>
-    <h:form>
+    <h:form id="form">
         <ui:composition>
             <div id="search-panel">
                 <h:inputText autocomplete="off"
@@ -24,6 +32,7 @@
                 </h:inputText>
                 <h:panelGroup id="result-panel"
                               layout="block" rendered="#{not empty searchBoxController.result}">
+                    <f:ajax onevent="ajaxEvent" render="@form"/>
                     <ul>
                         <ui:repeat value="#{searchBoxController.result}"
                                    var="r">
